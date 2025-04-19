@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+        
+        # = id
+        . = class
+        : = pseudo-classe
+        :: = pseudo-elemento
+        > = children
+        */
+
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(56, 56, 138);
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(217, 255, 0);
+        }
+
+        a:hover {
+            color: rgb(173, 34, 34);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        .especial {
+            background-color: grey;
+        }
+
+        .especial::before {
+            content: "⟶ " ;
+        }
+
+        .especial::after {
+            content: " ⟵" ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com" target="_blank">youtube</a></li>
+        <li><a href="https://www.rong-chang.com/" class="especial" target="_blank">curso de inglês</a></li>
+        <li><a href="https://chatgpt.com/" target="_blank">chatgpt</a></li>
+    </ul>
+</body>
+</html>
