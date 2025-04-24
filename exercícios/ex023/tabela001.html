@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando tabela simples</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #000000;
+            padding: 8px;
+            text-align: center; /* alinhamento horizontal */
+            vertical-align: middle; /* alinhamento vertical */
+        }
+
+        .numero {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+    hierarqui de tabelas (simples)
+        table row = linha de tabela (tr)
+            table header = cabeçalho de tabela (th)
+            table data = dado da tabela (td)
+    -->
+
+    <table>
+        <tr>
+            <td>Lucas</td>
+            <td class="numero">20</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td class="numero">22</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td class="numero">25</td>
+            <td>Masculino</td>
+    </table>
+</body>
+</html>
